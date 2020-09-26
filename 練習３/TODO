@@ -1,0 +1,66 @@
+〇ショートカット〇
+htmlのテンプレを開く
+                歯車/ユーザースニペット/html.json
+タグ作成
+                alt+w
+コード折り返し
+                alt+z
+ブックマーク作成
+                ctrl+alt+K
+ブックマーク移動
+                ctrl+alt+J(I)
+コメント化
+                ctrl+/
+その行を下に移動
+                Alt+↓
+その行を複製
+                Shift+Alt+↓コマンド
+                Ctrl+shift+p
+整形
+                shift+alt+f
+検索
+                ctrl+f
+
+cssグリッドデザイン
+                body {
+                    font-size: 1rem;
+                    width: 800px;
+                    margin: 0 auto;
+                    min-height: 100vh;
+                    display: grid;
+                    grid-template:
+                        "... ...... ...... ...... ...... ...... ..." auto
+                        "... header header header header header ..." 150px
+                        "... ...... ...... ...... ...... ...... ..." auto
+                        "... left   ...... center ...... right  ..." 1fr
+                        "... ...... ...... ...... ...... ...... ..." auto
+                        "... footer footer footer footer footer ..." 150px
+                        "... ...... ...... ...... ...... ...... ..." auto
+                        / auto 150px auto 1fr auto 150px auto;
+                }
+                header {
+                    grid-area: header;
+                }
+                main {
+                    grid-area: center;
+                }
+                nav {
+                    grid-area: left;
+                }
+                aside {
+                    grid-area: right;
+                }
+                footer {
+                    grid-area: footer;
+                }
+                @media screen and (max-width: 1000px) {
+                    body {
+                        grid-template:
+                            "header" 150px
+                            "center" 1fr
+                            "left  "
+                            "right "
+                            "footer" 150px;
+                    }
+                }
+

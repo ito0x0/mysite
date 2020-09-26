@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*--◆-----------------------◆-----
+  　　　　 リセットcss
+----◆-----------------------◆--*/
+*{
+	margin:0;
+	padding:0;
+}
+html {
+	height: 100%;
+}
+body{
+	font-family: 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'YuGothic', '游ゴシック', 'メイリオ', Meiryo, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:normal;
+}
+article,aside,footer,header,nav,section,main{
+    display:block;
+}
+p,div{
+	text-align:justify;
+	text-justify:distribute;
+}
+nav ul li{
+	list-style-type:none;
+}
+img{
+	border:none;
+	vertical-align: bottom;
+	line-height: 1.0;
+}
+img,video {
+    max-width: 100%;
+}
